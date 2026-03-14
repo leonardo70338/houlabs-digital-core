@@ -56,7 +56,7 @@ const HeroSection = () => (
 
           <motion.div variants={item} className="flex flex-wrap gap-4">
             <a
-              href="#cta"
+              href="mailto:administracion@houlabs.com.co"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105 active:scale-95"
             >
               Solicitar asesoría <ArrowRight size={16} strokeWidth={1.5} />

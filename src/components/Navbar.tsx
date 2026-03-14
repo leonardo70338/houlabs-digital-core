@@ -10,14 +10,16 @@ const links = [
   { label: "Contacto", href: "#cta" },
 ];
 
+import logo from "../assets/images/logo.png";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-brand-subtle bg-card/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <a href="#hero" className="text-xl font-bold tracking-tight text-foreground">
-          Hou<span className="text-gradient-primary">labs</span>
+        <a href="#hero" className="flex items-center">
+          <img src={logo} alt="Houlabs Logo" className="h-28 w-auto" />
         </a>
 
         {/* Desktop */}
@@ -32,7 +34,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#cta"
+            href="mailto:administracion@houlabs.com.co"
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105 active:scale-95"
           >
             Solicitar asesoría
@@ -65,7 +67,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#cta"
+                href="mailto:administracion@houlabs.com.co"
                 onClick={() => setOpen(false)}
                 className="rounded-full bg-primary px-5 py-2 text-center text-sm font-semibold text-primary-foreground shadow-glow"
               >
