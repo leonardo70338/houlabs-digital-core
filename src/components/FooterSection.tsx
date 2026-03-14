@@ -1,4 +1,5 @@
 import { Phone, Mail, Globe } from "lucide-react";
+import logo from "../assets/images/logo.png";
 
 const links = [
   { label: "Inicio", href: "#hero" },
@@ -13,8 +14,8 @@ const FooterSection = () => (
     <div className="container mx-auto px-4">
       <div className="grid gap-12 sm:grid-cols-3">
         <div>
-          <div className="text-xl font-bold text-foreground mb-3">
-            Hou<span className="text-gradient-primary">labs</span>
+          <div className="mb-4">
+            <img src={logo} alt="Houlabs Logo" className="h-36 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Soluciones tecnológicas y desarrollo de software empresarial.
